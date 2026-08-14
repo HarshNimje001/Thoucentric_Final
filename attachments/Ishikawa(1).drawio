@@ -1,0 +1,148 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="mlzDouEZiU93aPhAtH64">
+    <mxGraphModel dx="1212" dy="661" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-2" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="80" y="260" as="sourcePoint" />
+            <mxPoint x="680" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Demand missmatch" vertex="1">
+          <mxGeometry height="30" width="90" x="70" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Network Design &amp;amp; Deployment" vertex="1">
+          <mxGeometry height="30" width="110" x="270" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Digital Capability Gap" vertex="1">
+          <mxGeometry height="30" width="120" x="450" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Operations &amp;amp; Maintenance&amp;nbsp;" vertex="1">
+          <mxGeometry height="30" width="110" x="50" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="COMMERCIAL / UTILIZATION" vertex="1">
+          <mxGeometry height="40" width="100" x="280" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="CUSTOMER EXPERIENCE" vertex="1">
+          <mxGeometry height="30" width="100" x="490" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-10" edge="1" parent="1" source="Lqpc00jmFKE6f0cQxQtA-3" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="270" as="sourcePoint" />
+            <mxPoint x="200" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-11" edge="1" parent="1" source="Lqpc00jmFKE6f0cQxQtA-6" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="270" as="sourcePoint" />
+            <mxPoint x="220" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-14" edge="1" parent="1" source="Lqpc00jmFKE6f0cQxQtA-4" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="270" as="sourcePoint" />
+            <mxPoint x="370" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-15" edge="1" parent="1" source="Lqpc00jmFKE6f0cQxQtA-7" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="270" as="sourcePoint" />
+            <mxPoint x="400" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-16" edge="1" parent="1" source="Lqpc00jmFKE6f0cQxQtA-5" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="270" as="sourcePoint" />
+            <mxPoint x="600" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-17" edge="1" parent="1" source="Lqpc00jmFKE6f0cQxQtA-8" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="270" as="sourcePoint" />
+            <mxPoint x="620" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Uneven demand across locations" vertex="1">
+          <mxGeometry height="30" width="70" x="20" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Urban peak-hour congestion" vertex="1">
+          <mxGeometry height="30" width="70" x="30" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="68% prefer home charging" vertex="1">
+          <mxGeometry height="30" width="70" x="60" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Commercial fleets rely on public charging" vertex="1">
+          <mxGeometry height="30" width="90" x="70" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="2,800 existing stations" vertex="1">
+          <mxGeometry height="30" width="90" x="240" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="46% average utilization" vertex="1">
+          <mxGeometry height="30" width="90" x="240" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Highway &amp;amp; semi-urban underutilization" vertex="1">
+          <mxGeometry height="30" width="90" x="260" y="169" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Only 35% fast-charging" vertex="1">
+          <mxGeometry height="30" width="90" x="270" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Demand forecasting" vertex="1">
+          <mxGeometry height="30" width="90" x="430" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Dynamic pricing" vertex="1">
+          <mxGeometry height="24" width="90" x="480" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Smart load balancing" vertex="1">
+          <mxGeometry height="30" width="90" x="450" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="2,800 existing stations" vertex="1">
+          <mxGeometry height="30" width="90" x="490" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Charger availability" vertex="1">
+          <mxGeometry height="30" width="90" x="110" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Equipment downtime" vertex="1">
+          <mxGeometry height="30" width="90" x="80" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Real-time monitoring" vertex="1">
+          <mxGeometry height="30" width="90" x="20" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Predictive maintenance" vertex="1">
+          <mxGeometry height="30" width="90" x="50" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Peak demand concentration" vertex="1">
+          <mxGeometry height="30" width="120" x="270" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Idle capacity elsewhere" vertex="1">
+          <mxGeometry height="30" width="90" x="280" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Limited demand-shifting mechanisms" vertex="1">
+          <mxGeometry height="30" width="100" x="250" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Need to improve asset productivity" vertex="1">
+          <mxGeometry height="30" width="100" x="240" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Availability" vertex="1">
+          <mxGeometry height="30" width="90" x="540" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Charging speed" vertex="1">
+          <mxGeometry height="30" width="90" x="510" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-41" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Reliability" vertex="1">
+          <mxGeometry height="30" width="90" x="500" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=8;" value="Waiting / congestion" vertex="1">
+          <mxGeometry height="30" width="90" x="465" y="398" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ROOT CAUSE:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif;&quot;&gt;A potential gap in the granularity and responsiveness of EIC&#39;s network&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;planning and capacity-allocation process, resulting in fixed charging capacity&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-family: Arial, sans-serif;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;not being sufficiently aligned with evolving area-level, customer-segment and&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;peak-period demand.&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/span&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;&amp;lt;br/&amp;gt;line-height:normal&quot;&gt;&lt;span style=&quot;font-family:&amp;quot;Arial&amp;quot;,sans-serif;&amp;lt;br/&amp;gt;mso-fareast-font-family:&amp;quot;Times New Roman&amp;quot;;mso-font-kerning:0pt;mso-ligatures:&amp;lt;br/&amp;gt;none;mso-fareast-language:EN-IN&quot;&gt;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="70" width="550" x="40" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="Lqpc00jmFKE6f0cQxQtA-47" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;br&gt;EIC&#39;S CORE PROBLEM: EIC&#39;s charging network is underperforming: uneven utilization, peak-hour congestion, and reliability gaps are limiting customer satisfaction and competitive position.&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="640" x="40" y="600" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

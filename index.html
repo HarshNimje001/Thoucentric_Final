@@ -1,0 +1,1018 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EIC Strategy Workspace | Intelligent Charging Network</title>
+<meta name="description" content="EIC EV charging investment case strategy workspace: MECE problem diagnosis, 5 Whys root-cause analysis, Ishikawa fishbone, decision matrix, and Option C recommendation for intelligent charging network modernization.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- NAVIGATION                                  -->
+<!-- ═══════════════════════════════════════════ -->
+<header class="topbar" id="topbar">
+  <div class="brand">
+    <span class="brand-mark">EIC</span>
+    <span class="brand-text">Strategy Workspace</span>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="mainNav">
+    <a href="#hero" data-section="hero">Home</a>
+    <a href="#problem" data-section="problem">Problem</a>
+    <a href="#whys" data-section="whys">5 Whys</a>
+    <a href="#issue-tree" data-section="issue-tree">Issue Tree</a>
+    <a href="#ishikawa" data-section="ishikawa">Ishikawa</a>
+    <a href="#customers" data-section="customers">Customers</a>
+    <a href="#assumptions" data-section="assumptions">Assumptions</a>
+    <a href="#requirements" data-section="requirements">Requirements</a>
+    <a href="#options" data-section="options">Options</a>
+    <a href="#decision" data-section="decision">Decision</a>
+    <a href="#tradeoff" data-section="tradeoff">Trade-off</a>
+    <a href="#strategy" data-section="strategy">Recommendation</a>
+    <a href="#implementation" data-section="implementation">Roadmap</a>
+    <a href="#impact" data-section="impact">KPIs</a>
+    <a href="#prompts" data-section="prompts">Prompts</a>
+    <a href="#guardrails" data-section="guardrails">Guardrails</a>
+    <a href="#workflow" data-section="workflow">Workflow</a>
+    <a href="#team" data-section="team">Team</a>
+  </nav>
+</header>
+
+<!-- Progress bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<main>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 00 · HERO / HOME                            -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">BOTTOMS UP 5.0 · ROUND 1 · EIC</p>
+      <h1>From more chargers<br>to <span class="gradient-text">more certain</span> charging.</h1>
+      <p class="lead">A complete strategy workspace for EeVee Infrastructure Corporation — built around one question: is EIC mainly short of physical infrastructure, or does it need to align existing capacity with where, when and how public-charging demand actually occurs?</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#problem">
+          <span>Start with the problem</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn ghost" href="#decision">See the decision</a>
+      </div>
+    </div>
+    <div class="hero-metrics reveal reveal-delay-1">
+      <div class="metric-card">
+        <div class="metric-icon">⚡</div>
+        <strong class="counter" data-target="2800">0</strong>
+        <span>Public Stations</span>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">📊</div>
+        <strong><span class="counter" data-target="46">0</span>%</strong>
+        <span>Avg Utilization</span>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">📈</div>
+        <strong><span class="counter" data-target="32">0</span>%</strong>
+        <span>Annual EV Growth</span>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">💰</div>
+        <strong>₹5,000 Cr</strong>
+        <span>Capital Budget</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 01 · PROBLEM STATEMENT                      -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="problem">
+  <div class="section-head reveal">
+    <div class="section-number">01</div>
+    <p class="eyebrow">PROBLEM STATEMENT</p>
+    <h2>What problem is EIC <span class="gradient-text">actually</span> trying to solve?</h2>
+    <p class="section-note">The visual below is the team's problem-statement / MECE framing, shown as a supplied working artifact.</p>
+  </div>
+  <div class="artifact-frame reveal">
+    <img src="assets/problem_statement_hd.png" alt="EIC problem statement and MECE framework" class="artifact-img" loading="lazy">
+  </div>
+  <div class="case-fact-strip reveal">
+    <span class="fact-chip"><span class="chip-dot"></span>CASE FACT · 2,800 stations</span>
+    <span class="fact-chip"><span class="chip-dot"></span>CASE FACT · 46% utilization</span>
+    <span class="fact-chip"><span class="chip-dot"></span>CASE FACT · 32% annual EV growth</span>
+    <span class="fact-chip"><span class="chip-dot"></span>CASE FACT · One investment only</span>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 02 · 5 WHYS                                 -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="whys">
+  <div class="section-head reveal">
+    <div class="section-number">02</div>
+    <p class="eyebrow">ROOT-CAUSE DRILL-DOWN</p>
+    <h2>Why does the mismatch <span class="gradient-text">persist</span>?</h2>
+  </div>
+  <div class="two-col">
+    <div class="card glass reveal">
+      <ol class="why-list">
+        <li>
+          <div class="why-number">W1</div>
+          <strong>Why underutilization?</strong>
+          <p>Some stations may have more capacity than their immediate public-charging demand.</p>
+        </li>
+        <li>
+          <div class="why-number">W2</div>
+          <strong>Why congestion elsewhere?</strong>
+          <p>Public-charging demand is concentrated among specific customer segments and locations.</p>
+        </li>
+        <li>
+          <div class="why-number">W3</div>
+          <strong>Why aren't fleets filling every highway station?</strong>
+          <p>Fleet demand depends on actual operating routes and charging behaviour.</p>
+        </li>
+        <li>
+          <div class="why-number">W4</div>
+          <strong>Why can mismatch persist?</strong>
+          <p>Physical charging assets are location-specific while demand changes across regions, segments and peak periods.</p>
+        </li>
+        <li>
+          <div class="why-number">W5</div>
+          <strong>Why does this matter?</strong>
+          <p>Without continuous demand-led planning and capacity management, initial allocation gaps persist.</p>
+        </li>
+      </ol>
+    </div>
+    <div class="card glass first-principles reveal reveal-delay-1">
+      <div class="fp-badge">FIRST PRINCIPLES</div>
+      <h3>A charging station is not valuable just because it exists.</h3>
+      <p>It creates value when it is <em>accessible, available, operational and used.</em></p>
+      <div class="flow-chain">
+        <span>Need to charge</span>
+        <span class="flow-arrow">→</span>
+        <span>Suitable station</span>
+        <span class="flow-arrow">→</span>
+        <span>Available</span>
+        <span class="flow-arrow">→</span>
+        <span>Operational</span>
+        <span class="flow-arrow">→</span>
+        <span>Low friction</span>
+        <span class="flow-arrow">→</span>
+        <span>Successful session</span>
+      </div>
+      <p class="conclusion">The fundamental objective is not to maximize charger count — it is to maximize <strong>reliable charging sessions</strong> from available physical capacity and capital.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 03 · FINAL ISSUE TREE                       -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="issue-tree">
+  <div class="section-head reveal">
+    <div class="section-number">03</div>
+    <p class="eyebrow">MECE DIAGNOSIS</p>
+    <h2>Final <span class="gradient-text">Issue Tree</span></h2>
+    <p class="section-note">Supplied Draw.io diagram rendered as a visual artifact.</p>
+  </div>
+  <div class="artifact-actions reveal">
+    <a class="btn ghost small" href="attachments/Final%20Issue%20Tree%20(1).drawio" download>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+      Download Draw.io
+    </a>
+  </div>
+  <div class="artifact-frame reveal">
+    <img src="assets/final_issue_tree.svg" alt="Final EIC issue tree" class="artifact-img diagram-svg" loading="lazy">
+  </div>
+  <div class="mini-grid reveal">
+    <div class="mini-card">
+      <div class="mini-icon">📊</div>
+      <strong>1 · Demand dynamics</strong>
+      <span>How is demand changing?</span>
+    </div>
+    <div class="mini-card">
+      <div class="mini-icon">⚙️</div>
+      <strong>2 · Network performance</strong>
+      <span>Is current capacity aligned?</span>
+    </div>
+    <div class="mini-card">
+      <div class="mini-icon">👥</div>
+      <strong>3 · Customer & competition</strong>
+      <span>What service standard must EIC meet?</span>
+    </div>
+    <div class="mini-card">
+      <div class="mini-icon">🔒</div>
+      <strong>4 · Investment constraint</strong>
+      <span>What limits EIC's response?</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 04 · ISHIKAWA                               -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="ishikawa">
+  <div class="section-head reveal">
+    <div class="section-number">04</div>
+    <p class="eyebrow">ROOT-CAUSE ANALYSIS</p>
+    <h2>Ishikawa / <span class="gradient-text">Fishbone</span> Diagram</h2>
+    <p class="section-note">Why is EIC's charging network underperforming? Analyzing root causes of low utilization, congestion and reliability gaps.</p>
+  </div>
+  <div class="artifact-actions reveal">
+    <a class="btn ghost small" href="attachments/Ishikawa%281%29.drawio" download>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+      Download Draw.io source
+    </a>
+    <a class="btn ghost small" href="assets/fishbone_reference.png" target="_blank">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+      View full-size diagram
+    </a>
+  </div>
+
+  <!-- HTML-rendered Ishikawa fishbone -->
+  <div class="ishikawa-html reveal">
+    <div class="ishikawa-title">FISHBONE (ISHIKAWA) DIAGRAM — WHY IS EIC'S CHARGING NETWORK UNDERPERFORMING?</div>
+    <div class="ishikawa-subtitle">Analyzing root causes of low utilization, congestion, and reliability gaps</div>
+
+    <!-- Top row: 3 categories -->
+    <div class="ishi-top-row">
+      <div class="ishi-category">
+        <div class="ishi-cat-header demand"><span class="ishi-icon">📊</span> 1. DEMAND (MARKET)</div>
+        <ul class="ishi-items">
+          <li><span class="ishi-item-id">1.1</span> <span class="ishi-item-title">Uneven EV Adoption</span><span class="ishi-item-desc">EV growth concentrated in metros; low penetration in semi-urban and rural areas</span></li>
+          <li><span class="ishi-item-id">1.2</span> <span class="ishi-item-title">Home Charging Preference</span><span class="ishi-item-desc">68% of EV owners prefer home charging; reduces public charging relevance for majority</span></li>
+          <li><span class="ishi-item-id">1.3</span> <span class="ishi-item-title">Narrow Addressable Segment</span><span class="ishi-item-desc">Public charging mainly serves commuters, travelers and commercial fleets</span></li>
+          <li><span class="ishi-item-id">1.4</span> <span class="ishi-item-title">Peak-Hour Demand Spikes</span><span class="ishi-item-desc">Demand highly concentrated during peak hours at specific locations</span></li>
+        </ul>
+      </div>
+      <div class="ishi-category">
+        <div class="ishi-cat-header network"><span class="ishi-icon">📍</span> 2. NETWORK DESIGN (INFRA)</div>
+        <ul class="ishi-items">
+          <li><span class="ishi-item-id">2.1</span> <span class="ishi-item-title">Suboptimal Siting</span><span class="ishi-item-desc">Stations placed as per rollout plan, not driven by real-time demand signals</span></li>
+          <li><span class="ishi-item-id">2.2</span> <span class="ishi-item-title">Urban Congestion</span><span class="ishi-item-desc">High demand clusters at known metro locations leading to frequent congestion</span></li>
+          <li><span class="ishi-item-id">2.3</span> <span class="ishi-item-title">Underutilization Elsewhere</span><span class="ishi-item-desc">Highway and semi-urban stations operate significantly below capacity</span></li>
+          <li><span class="ishi-item-id">2.4</span> <span class="ishi-item-title">Charger Mix Mismatch</span><span class="ishi-item-desc">Only 35% fast-charging share; speed not aligned with rising customer expectations</span></li>
+        </ul>
+      </div>
+      <div class="ishi-category">
+        <div class="ishi-cat-header digital"><span class="ishi-icon">💻</span> 3. DIGITAL CAPABILITY</div>
+        <ul class="ishi-items">
+          <li><span class="ishi-item-id">3.1</span> <span class="ishi-item-title">No Demand Forecasting</span><span class="ishi-item-desc">Lack of AI-enabled forecasting; cannot anticipate where/when demand will occur</span></li>
+          <li><span class="ishi-item-id">3.2</span> <span class="ishi-item-title">No Load Balancing</span><span class="ishi-item-desc">No mechanism to redirect demand from congested to available stations</span></li>
+          <li><span class="ishi-item-id">3.3</span> <span class="ishi-item-title">No Dynamic Pricing</span><span class="ishi-item-desc">No pricing levers to shift demand away from peak hours/locations</span></li>
+          <li><span class="ishi-item-id">3.4</span> <span class="ishi-item-title">No Reservation Platform</span><span class="ishi-item-desc">Customers cannot see availability or reserve slots in advance</span></li>
+          <li><span class="ishi-item-id">3.5</span> <span class="ishi-item-title">Limited Predictive Maintenance</span><span class="ishi-item-desc">Reactive approach leads to downtime and reliability issues</span></li>
+          <li><span class="ishi-item-id">3.6</span> <span class="ishi-item-title">Limited Remote Monitoring</span><span class="ishi-item-desc">Insufficient real-time monitoring and issue detection across network</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Central spine -->
+    <div class="ishi-spine">
+      <div class="ishi-spine-line"></div>
+      <div class="ishi-spine-arrow"></div>
+      <div class="ishi-effect-box">
+        EIC's charging network is <strong>underperforming</strong>: uneven utilization, peak-hour congestion, and reliability gaps — limiting customer satisfaction and competitive position
+      </div>
+    </div>
+
+    <!-- Bottom row: 3 categories -->
+    <div class="ishi-bottom-row">
+      <div class="ishi-category">
+        <div class="ishi-cat-header operations"><span class="ishi-icon">⚙️</span> 4. OPERATIONS & MAINTENANCE</div>
+        <ul class="ishi-items">
+          <li><span class="ishi-item-id">4.1</span> <span class="ishi-item-title">Downtime & Reliability Issues</span><span class="ishi-item-desc">Equipment failures and outages reduce effective availability</span></li>
+          <li><span class="ishi-item-id">4.2</span> <span class="ishi-item-title">Inconsistent Service Quality</span><span class="ishi-item-desc">Variation in charging experience across locations</span></li>
+          <li><span class="ishi-item-id">4.3</span> <span class="ishi-item-title">Slow Issue Resolution</span><span class="ishi-item-desc">Manual intervention and longer ticket resolution cycles</span></li>
+        </ul>
+      </div>
+      <div class="ishi-category">
+        <div class="ishi-cat-header commercial"><span class="ishi-icon">💰</span> 5. COMMERCIAL & PRICING</div>
+        <ul class="ishi-items">
+          <li><span class="ishi-item-id">5.1</span> <span class="ishi-item-title">Limited Revenue Optimization</span><span class="ishi-item-desc">Flat pricing model does not optimize utilization or revenue</span></li>
+          <li><span class="ishi-item-id">5.2</span> <span class="ishi-item-title">Low Utilization Impact</span><span class="ishi-item-desc">Average utilization only 46%; suboptimal asset productivity</span></li>
+          <li><span class="ishi-item-id">5.3</span> <span class="ishi-item-title">High OPEX per Session</span><span class="ishi-item-desc">Idle capacity and inefficiencies increase cost per charging session</span></li>
+        </ul>
+      </div>
+      <div class="ishi-category">
+        <div class="ishi-cat-header customer"><span class="ishi-icon">👥</span> 6. CUSTOMER EXPERIENCE</div>
+        <ul class="ishi-items">
+          <li><span class="ishi-item-id">6.1</span> <span class="ishi-item-title">Availability Uncertainty</span><span class="ishi-item-desc">Customers unsure about charger availability at time of need</span></li>
+          <li><span class="ishi-item-id">6.2</span> <span class="ishi-item-title">Speed Concerns</span><span class="ishi-item-desc">Long wait times and limited fast-charging options</span></li>
+          <li><span class="ishi-item-id">6.3</span> <span class="ishi-item-title">Reliability Concerns</span><span class="ishi-item-desc">Outages and inconsistent performance erode trust</span></li>
+          <li><span class="ishi-item-id">6.4</span> <span class="ishi-item-title">Poor End-to-End Experience</span><span class="ishi-item-desc">Lack of digital convenience and real-time information</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Root cause banner -->
+  <div class="root-cause-banner reveal">
+    <div class="rcb-label">ROOT CAUSE HYPOTHESIS</div>
+    <p>A potential gap in the <strong>granularity and responsiveness</strong> of EIC's network planning and capacity-allocation process, leaving fixed charging capacity insufficiently aligned with evolving area-level, customer-segment and peak-period demand. <em>The issue is not just building more infrastructure, but optimizing and operating existing capacity intelligently.</em></p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 05 · CUSTOMER & DEMAND                      -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="customers">
+  <div class="section-head reveal">
+    <div class="section-number">05</div>
+    <p class="eyebrow">CUSTOMER & DEMAND LOGIC</p>
+    <h2>Who actually creates <span class="gradient-text">public-charging</span> demand?</h2>
+  </div>
+  <div class="table-wrap reveal">
+    <table>
+      <thead>
+        <tr>
+          <th>Segment</th>
+          <th>Job to be done</th>
+          <th>Main pain</th>
+          <th>What matters most</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="segment-badge">🚗</span> Individual EV owner</td>
+          <td>Charge when home charging is unavailable or inconvenient</td>
+          <td>Uncertainty / availability</td>
+          <td>Availability, speed, reliability</td>
+        </tr>
+        <tr>
+          <td><span class="segment-badge">🏙️</span> Urban user</td>
+          <td>Charge within routine travel windows</td>
+          <td>Peak congestion</td>
+          <td>Availability + waiting time</td>
+        </tr>
+        <tr>
+          <td><span class="segment-badge">🛣️</span> Highway user</td>
+          <td>Complete a journey with charging confidence</td>
+          <td>Availability / reliability risk</td>
+          <td>Reliability + visibility</td>
+        </tr>
+        <tr>
+          <td><span class="segment-badge">🏘️</span> Semi-urban user</td>
+          <td>Find practical public charging when needed</td>
+          <td>Uneven access</td>
+          <td>Availability + location convenience</td>
+        </tr>
+        <tr>
+          <td><span class="segment-badge">🚚</span> Commercial fleet</td>
+          <td>Keep vehicles moving with predictable public charging</td>
+          <td>Route / downtime risk</td>
+          <td>Reliability + speed + availability</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout warning reveal">
+    <div class="callout-icon">⚠️</div>
+    <div>
+      <strong>Important:</strong> The case does not provide a reliable urban-versus-rural EV penetration split. Do not invent one. Public-charging demand should be analyzed using actual user segments and location-level demand.
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 06 · ASSUMPTIONS                            -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="assumptions">
+  <div class="section-head reveal">
+    <div class="section-number">06</div>
+    <p class="eyebrow">ANALYTICAL ASSUMPTIONS</p>
+    <h2>What has to be <span class="gradient-text">true</span> for the recommendation to hold?</h2>
+  </div>
+  <div class="assumption-grid">
+    <div class="card glass assumption reveal">
+      <div class="assumption-id">A1</div>
+      <h3>Uneven EV growth</h3>
+      <p>EV growth is not uniform across urban, semi-urban and highway catchments. This is an inference, not a stated case fact.</p>
+    </div>
+    <div class="card glass assumption reveal reveal-delay-1">
+      <div class="assumption-id">A2</div>
+      <h3>Public-demand concentration</h3>
+      <p>Public-charging demand is disproportionately generated by fleets, travelers and users without convenient home charging.</p>
+    </div>
+    <div class="card glass assumption reveal reveal-delay-2">
+      <div class="assumption-id">A3</div>
+      <h3>Service benchmark pressure</h3>
+      <p>Private operators are raising the service benchmark enough to make availability, speed and reliability strategically important.</p>
+    </div>
+    <div class="card glass assumption reveal">
+      <div class="assumption-id">A4</div>
+      <h3>Fixed physical assets</h3>
+      <p>Existing stations are location-specific and capital-intensive enough that relocation is less practical than better planning.</p>
+    </div>
+    <div class="card glass assumption reveal reveal-delay-1">
+      <div class="assumption-id">A5</div>
+      <h3>Digital feasibility</h3>
+      <p>EIC can build sufficient data, integration, employee adoption and change-management capability within three years.</p>
+    </div>
+    <div class="card glass assumption reveal reveal-delay-2">
+      <div class="assumption-id">A6</div>
+      <h3>Optimization headroom</h3>
+      <p>A meaningful part of underutilization can be improved through demand matching before broad physical expansion is required.</p>
+    </div>
+  </div>
+  <div class="callout warning reveal">
+    <div class="callout-icon">⚠️</div>
+    <div>
+      <strong>30% utilization caveat:</strong> The case states an expected 30% increase but does not define whether relative or percentage-point. Any ~60% interpretation must remain clearly labelled as an assumption, not a case fact.
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 07 · STRATEGIC REQUIREMENTS                 -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="requirements">
+  <div class="section-head reveal">
+    <div class="section-number">07</div>
+    <p class="eyebrow">STRATEGIC REQUIREMENTS</p>
+    <h2>What the investment <span class="gradient-text">must deliver</span></h2>
+  </div>
+  <div class="requirement-grid">
+    <div class="requirement reveal">
+      <div class="req-number">01</div>
+      <strong>Improve demand-to-capacity alignment</strong>
+      <p>Do not treat infrastructure quantity alone as the objective.</p>
+    </div>
+    <div class="requirement reveal reveal-delay-1">
+      <div class="req-number">02</div>
+      <strong>Understand location-level public demand</strong>
+      <p>Plan around actual public-charging behaviour, not EV ownership alone.</p>
+    </div>
+    <div class="requirement reveal reveal-delay-1">
+      <div class="req-number">03</div>
+      <strong>Improve existing-network utilization</strong>
+      <p>Start from the 46% utilization baseline.</p>
+    </div>
+    <div class="requirement reveal reveal-delay-2">
+      <div class="req-number">04</div>
+      <strong>Improve customer experience</strong>
+      <p>Availability, charging speed and reliability remain central.</p>
+    </div>
+    <div class="requirement reveal reveal-delay-2">
+      <div class="req-number">05</div>
+      <strong>Remain scalable to 2030</strong>
+      <p>Use better demand intelligence to inform future investment.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 08 · THREE OPTIONS                          -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="options">
+  <div class="section-head reveal">
+    <div class="section-number">08</div>
+    <p class="eyebrow">THREE INVESTMENT OPTIONS</p>
+    <h2>None is perfect. Each solves a <span class="gradient-text">different problem</span>.</h2>
+  </div>
+  <div class="option-grid">
+    <article class="option-card opt-a reveal">
+      <div class="option-accent"></div>
+      <div class="option-code">OPTION A</div>
+      <h3>Build More</h3>
+      <p>2,000 additional DC fast-charging stations across highways, metros and industrial corridors.</p>
+      <div class="option-stats">
+        <span class="stat-pill">₹4,800 Cr</span>
+        <span class="stat-pill">4 years</span>
+        <span class="stat-pill">+70% network</span>
+      </div>
+      <div class="option-verdict">
+        <div><strong>Strongest:</strong> Physical fast-charging capacity</div>
+        <div><strong>Limitation:</strong> Does not solve demand-location allocation</div>
+      </div>
+    </article>
+    <article class="option-card opt-b reveal reveal-delay-1">
+      <div class="option-accent"></div>
+      <div class="option-code">OPTION B</div>
+      <h3>Reach More</h3>
+      <p>Distributed charging across Tier-2 cities, Tier-3 towns and rural growth corridors through partnerships.</p>
+      <div class="option-stats">
+        <span class="stat-pill">₹3,900 Cr</span>
+        <span class="stat-pill">5 years</span>
+        <span class="stat-pill">+55% coverage</span>
+      </div>
+      <div class="option-verdict">
+        <div><strong>Strongest:</strong> Geographic accessibility & market development</div>
+        <div><strong>Limitation:</strong> Demand in new locations remains uncertain</div>
+      </div>
+    </article>
+    <article class="option-card opt-c reveal reveal-delay-2">
+      <div class="option-accent"></div>
+      <div class="option-badge">RECOMMENDED</div>
+      <div class="option-code">OPTION C</div>
+      <h3>Manage Better</h3>
+      <p>Intelligent modernization: forecasting, load balancing, pricing, reservations, predictive maintenance, renewable integration, monitoring.</p>
+      <div class="option-stats">
+        <span class="stat-pill">₹2,600 Cr</span>
+        <span class="stat-pill">3 years</span>
+        <span class="stat-pill">+30% utilization</span>
+      </div>
+      <div class="option-verdict">
+        <div><strong>Strongest:</strong> Demand-capacity orchestration</div>
+        <div><strong>Limitation:</strong> Depends on data, technology & change mgmt</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 09 · DECISION MATRIX                        -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="decision">
+  <div class="section-head reveal">
+    <div class="section-number">09</div>
+    <p class="eyebrow">DECISION MATRIX</p>
+    <h2>Weighted <span class="gradient-text">comparison</span></h2>
+    <p class="section-note">Team analytical assessment using case evidence and stated assumptions. 5 = strongest.</p>
+  </div>
+  <div class="table-wrap reveal">
+    <table class="decision-table">
+      <thead>
+        <tr>
+          <th>Criterion</th>
+          <th>Weight</th>
+          <th>A: Fast Charging</th>
+          <th>B: Rural/Tier-2</th>
+          <th>C: Intelligent</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Root-cause resolution</td><td>20%</td><td>2</td><td>2</td><td class="winner">5</td></tr>
+        <tr><td>Market demand alignment</td><td>15%</td><td>3</td><td>3</td><td class="winner">5</td></tr>
+        <tr><td>Customer impact</td><td>10%</td><td>4</td><td>4</td><td class="winner">5</td></tr>
+        <tr><td>Financial viability</td><td>10%</td><td>2</td><td>3</td><td class="winner">5</td></tr>
+        <tr><td>ROI / value creation</td><td>10%</td><td>2</td><td>3</td><td class="winner">4</td></tr>
+        <tr><td>Operational efficiency</td><td>10%</td><td>3</td><td>3</td><td class="winner">5</td></tr>
+        <tr><td>Scalability to 2030</td><td>10%</td><td class="winner">5</td><td>4</td><td class="winner">5</td></tr>
+        <tr><td>Technology readiness</td><td>5%</td><td class="winner">5</td><td>4</td><td>3</td></tr>
+        <tr><td>Environmental sustainability</td><td>5%</td><td>3</td><td>4</td><td class="winner">5</td></tr>
+        <tr><td>Implementation risk</td><td>5%</td><td>3</td><td>3</td><td class="winner">4</td></tr>
+        <tr class="total-row">
+          <td>Weighted Score / 5</td>
+          <td>100%</td>
+          <td>3.00</td>
+          <td>3.05</td>
+          <td class="winner-total">4.75</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 10 · STRATEGIC TRADE-OFF                    -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="tradeoff">
+  <div class="section-head reveal">
+    <div class="section-number">10</div>
+    <p class="eyebrow">STRATEGIC TRADE-OFF</p>
+    <h2>What each option is <span class="gradient-text">really buying</span></h2>
+  </div>
+  <div class="tradeoff-grid">
+    <div class="tradeoff-card reveal">
+      <div class="option-code">OPTION A</div>
+      <h3>Build More</h3>
+      <p>More physical capacity and faster charging, but without directly strengthening demand-location allocation.</p>
+      <div class="tradeoff-score">Score: 3.00</div>
+    </div>
+    <div class="tradeoff-card reveal reveal-delay-1">
+      <div class="option-code">OPTION B</div>
+      <h3>Reach More</h3>
+      <p>More geographic coverage, but with uncertainty about whether new locations will generate enough public-charging demand.</p>
+      <div class="tradeoff-score">Score: 3.05</div>
+    </div>
+    <div class="tradeoff-card selected reveal reveal-delay-2">
+      <div class="option-code">OPTION C</div>
+      <h3>Understand, Optimize & Respond</h3>
+      <p>Better demand intelligence, utilization, reliability and network responsiveness, with technology and execution as the main dependency.</p>
+      <div class="tradeoff-score highlight">Score: 4.75</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 11 · RECOMMENDATION                         -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="strategy">
+  <div class="section-head reveal">
+    <div class="section-number">11</div>
+    <p class="eyebrow">STRATEGIC RECOMMENDATION</p>
+    <h2>Option C — <span class="gradient-text">Intelligent Charging Network</span> Modernization</h2>
+  </div>
+  <div class="strategy-banner reveal">
+    <div class="strategy-tag">STRATEGIC PRINCIPLE</div>
+    <h3>Modernize first. Expand where the data proves expansion is required.</h3>
+    <p>The decision is driven by <strong>strategic fit</strong>, not simply cost. None of the three options is perfect. C is preferred because it directly addresses the diagnosed demand-capacity alignment problem while creating the information needed to make future physical expansion decisions better.</p>
+  </div>
+  <div class="capability-grid reveal">
+    <div class="capability">
+      <div class="cap-icon">🔮</div>
+      <strong>Forecast</strong>
+      <span>AI demand forecasting</span>
+    </div>
+    <div class="capability">
+      <div class="cap-icon">⚖️</div>
+      <strong>Optimize</strong>
+      <span>Smart load balancing</span>
+    </div>
+    <div class="capability">
+      <div class="cap-icon">💲</div>
+      <strong>Influence</strong>
+      <span>Dynamic pricing</span>
+    </div>
+    <div class="capability">
+      <div class="cap-icon">📱</div>
+      <strong>Assure</strong>
+      <span>Reservations + monitoring</span>
+    </div>
+    <div class="capability">
+      <div class="cap-icon">🔧</div>
+      <strong>Maintain</strong>
+      <span>Predictive maintenance</span>
+    </div>
+    <div class="capability">
+      <div class="cap-icon">🧠</div>
+      <strong>Learn</strong>
+      <span>Analytics → expansion map</span>
+    </div>
+  </div>
+  <div class="strategy-flow reveal">
+    <div class="flow-node active">Option C</div>
+    <span class="flow-connector">→</span>
+    <div class="flow-node">Build demand intelligence</div>
+    <span class="flow-connector">→</span>
+    <div class="flow-node">Improve utilization</div>
+    <span class="flow-connector">→</span>
+    <div class="flow-node">Reduce congestion</div>
+    <span class="flow-connector">→</span>
+    <div class="flow-node">Improve reliability</div>
+    <span class="flow-connector">→</span>
+    <div class="flow-node">Identify capacity gaps</div>
+    <span class="flow-connector">→</span>
+    <div class="flow-node">Targeted expansion</div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 12 · IMPLEMENTATION ROADMAP                 -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="implementation">
+  <div class="section-head reveal">
+    <div class="section-number">12</div>
+    <p class="eyebrow">IMPLEMENTATION ROADMAP</p>
+    <h2>Three years: <span class="gradient-text">foundation → optimization → expansion</span></h2>
+  </div>
+  <div class="timeline">
+    <div class="phase reveal">
+      <div class="phase-marker">
+        <div class="phase-dot"></div>
+        <div class="phase-line"></div>
+      </div>
+      <div class="phase-time">0–6 months</div>
+      <div class="phase-content card glass">
+        <h3>Phase 1 — Network Intelligence Foundation</h3>
+        <ul>
+          <li>Establish station-level utilization baseline</li>
+          <li>Identify congestion and underutilization patterns</li>
+          <li>Consolidate demand and operational data</li>
+          <li>Assess and build demand-forecasting capability</li>
+          <li>Define station-level performance KPIs</li>
+        </ul>
+        <div class="gate"><strong>Gate:</strong> Is station-level data reliable enough to understand the demand-capacity mismatch?</div>
+      </div>
+    </div>
+    <div class="phase reveal reveal-delay-1">
+      <div class="phase-marker">
+        <div class="phase-dot"></div>
+        <div class="phase-line"></div>
+      </div>
+      <div class="phase-time">6–18 months</div>
+      <div class="phase-content card glass">
+        <h3>Phase 2 — Network Optimization</h3>
+        <ul>
+          <li>Implement AI-enabled demand forecasting</li>
+          <li>Deploy smart load balancing</li>
+          <li>Introduce mobile reservations</li>
+          <li>Deploy predictive maintenance</li>
+          <li>Establish remote monitoring</li>
+          <li>Pilot dynamic pricing where appropriate</li>
+        </ul>
+        <div class="gate"><strong>Gate:</strong> Do pilots demonstrate measurable improvement in utilization, availability and reliability?</div>
+      </div>
+    </div>
+    <div class="phase reveal reveal-delay-2">
+      <div class="phase-marker">
+        <div class="phase-dot"></div>
+      </div>
+      <div class="phase-time">18–36 months</div>
+      <div class="phase-content card glass">
+        <h3>Phase 3 — Scale & Prepare Future Expansion</h3>
+        <ul>
+          <li>Scale successful digital capabilities network-wide</li>
+          <li>Integrate renewable energy where feasible</li>
+          <li>Continuously reassess station-level demand</li>
+          <li>Identify structurally congested locations requiring physical capacity</li>
+          <li>Develop a data-backed investment pipeline for the next capital cycle</li>
+        </ul>
+        <div class="gate"><strong>Gate:</strong> Where does the data prove that physical expansion is genuinely required?</div>
+      </div>
+    </div>
+  </div>
+  <div class="mini-grid reveal">
+    <div class="mini-card">
+      <div class="mini-icon">🏙️</div>
+      <strong>Urban priority</strong>
+      <span>Forecasting + load balancing + reservations + pricing + reliability</span>
+    </div>
+    <div class="mini-card">
+      <div class="mini-icon">🛣️</div>
+      <strong>Highway priority</strong>
+      <span>Forecasting + reservations + predictive maintenance + monitoring</span>
+    </div>
+    <div class="mini-card">
+      <div class="mini-icon">🏘️</div>
+      <strong>Semi-urban priority</strong>
+      <span>Demand intelligence + pricing pilots + utilization monitoring + expansion assessment</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 13 · KPIs & IMPACT                          -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="impact">
+  <div class="section-head reveal">
+    <div class="section-number">13</div>
+    <p class="eyebrow">KPIs & BUSINESS IMPACT</p>
+    <h2>How will EIC know the investment <span class="gradient-text">is working</span>?</h2>
+  </div>
+  <div class="kpi-grid reveal">
+    <div class="kpi-card">
+      <strong class="kpi-value">46%</strong>
+      <span>Current utilization baseline</span>
+    </div>
+    <div class="kpi-card accent">
+      <strong class="kpi-value">+30%</strong>
+      <span>Option C utilization target</span>
+    </div>
+    <div class="kpi-card">
+      <strong class="kpi-value">↓</strong>
+      <span>Peak-hour congestion</span>
+    </div>
+    <div class="kpi-card">
+      <strong class="kpi-value">↑</strong>
+      <span>Station availability</span>
+    </div>
+    <div class="kpi-card">
+      <strong class="kpi-value">↑</strong>
+      <span>Charger uptime / reliability</span>
+    </div>
+    <div class="kpi-card">
+      <strong class="kpi-value">↑</strong>
+      <span>Reservation utilization</span>
+    </div>
+    <div class="kpi-card">
+      <strong class="kpi-value">↑</strong>
+      <span>Utilization per ₹ invested</span>
+    </div>
+    <div class="kpi-card">
+      <strong class="kpi-value">↑</strong>
+      <span>Investments backed by data</span>
+    </div>
+  </div>
+  <div class="impact-grid reveal">
+    <div class="card glass">
+      <h3>📊 Network utilization</h3>
+      <p>Improve the productivity of existing assets and narrow utilization imbalances.</p>
+    </div>
+    <div class="card glass">
+      <h3>😊 Customer experience</h3>
+      <p>Improve availability, reliability and convenience around the three stated satisfaction priorities.</p>
+    </div>
+    <div class="card glass">
+      <h3>🔧 Operational reliability</h3>
+      <p>Use monitoring and predictive maintenance to reduce avoidable downtime.</p>
+    </div>
+    <div class="card glass">
+      <h3>💰 Financial efficiency</h3>
+      <p>Extract more value from the existing 2,800-station network without inventing ROI figures.</p>
+    </div>
+    <div class="card glass">
+      <h3>🧠 Strategic capability</h3>
+      <p>Create a data-driven basis for future physical expansion decisions.</p>
+    </div>
+    <div class="card glass">
+      <h3>🌱 Sustainability</h3>
+      <p>Integrate renewable energy where feasible, consistent with the case's sustainability priority.</p>
+    </div>
+  </div>
+  <div class="callout warning reveal">
+    <div class="callout-icon">📋</div>
+    <div>
+      <strong>Financial discipline:</strong> The case does not provide enough data to calculate conventional ROI, NPV or payback. Use utilization, availability, uptime, congestion and utilization per ₹ invested as leading indicators.
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 14 · AI PROMPT JOURNEY                      -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="prompts">
+  <div class="section-head reveal">
+    <div class="section-number">14</div>
+    <p class="eyebrow">AI PROMPT JOURNEY</p>
+    <h2>The <span class="gradient-text">8 prompts</span> behind the analysis</h2>
+    <p class="section-note">Written to be natural, precise and progressively connected — without role prompting.</p>
+  </div>
+  <div id="prompt-list" class="prompt-list reveal"></div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 15 · GUARDRAILS                             -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="guardrails">
+  <div class="section-head reveal">
+    <div class="section-number">15</div>
+    <p class="eyebrow">ANALYTICAL GUARDRAILS</p>
+    <h2>How we avoid <span class="gradient-text">overclaiming</span></h2>
+  </div>
+  <div class="guardrails-grid reveal">
+    <div class="card glass">
+      <div class="guardrail-icon">📌</div>
+      <h3>Case fact</h3>
+      <p>Directly stated by the case. Example: 2,800 stations, 46% utilization, ₹5,000 Cr budget.</p>
+    </div>
+    <div class="card glass">
+      <div class="guardrail-icon">🔗</div>
+      <h3>Inference</h3>
+      <p>A logical interpretation derived from multiple case facts. Example: the coexistence of congestion and underutilization suggests a demand-capacity mismatch.</p>
+    </div>
+    <div class="card glass">
+      <div class="guardrail-icon">🔮</div>
+      <h3>Assumption</h3>
+      <p>A bridge used because the case does not provide enough granular evidence. Always label it.</p>
+    </div>
+    <div class="card glass">
+      <div class="guardrail-icon">🎯</div>
+      <h3>Recommendation</h3>
+      <p>The team's strategic judgement after diagnosis, comparison and stress-testing.</p>
+    </div>
+  </div>
+  <div class="callout warning reveal">
+    <div class="callout-icon">🚫</div>
+    <div>
+      <strong>Do not invent:</strong> urban/rural penetration percentages, competitor market shares, revenue, ROI, station economics, charger failure rates or unsupported demand forecasts. If the case does not provide it, say "not provided in the case."
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 16 · COMPETITION WORKFLOW                   -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="workflow">
+  <div class="section-head reveal">
+    <div class="section-number">16</div>
+    <p class="eyebrow">COMPETITION WORKFLOW</p>
+    <h2>Rules and <span class="gradient-text">submission discipline</span></h2>
+  </div>
+  <div class="workflow-grid reveal">
+    <div class="card glass workflow-allowed">
+      <h3>✅ Allowed</h3>
+      <ul>
+        <li>Prompt refinement and iteration</li>
+        <li>Multiple prompt attempts</li>
+        <li>Comparison, analysis and synthesis</li>
+        <li>Successive recommendation-building</li>
+      </ul>
+    </div>
+    <div class="card glass workflow-prohibited">
+      <h3>🚫 Not allowed</h3>
+      <ul>
+        <li>No role prompting</li>
+        <li>No case PDF upload into the AI platform</li>
+        <li>No asking AI to infer missing data or ask follow-up questions</li>
+        <li>No AI-generated diagrams or charts in the final submission</li>
+        <li>Use only the approved free AI platform</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 17 · ABOUT THE WORK                         -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="about">
+  <div class="section-head reveal">
+    <div class="section-number">17</div>
+    <p class="eyebrow">ABOUT THE WORK</p>
+    <h2>Why this strategy is <span class="gradient-text">conditional</span></h2>
+  </div>
+  <div class="final-banner reveal">
+    <p class="big-quote">"None of the three options is perfect. C is the best fit <em>only</em> under the stated assumptions."</p>
+    <p>The decision is not "C instead of expansion forever." It is a <strong>sequencing choice</strong>: modernize the network, learn where public demand is actually emerging, improve today's performance, and use the resulting evidence to decide where physical expansion is genuinely required in the next capital cycle.</p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- 18 · THE TEAM                               -->
+<!-- ═══════════════════════════════════════════ -->
+<section class="section" id="team">
+  <div class="section-head reveal">
+    <div class="section-number">18</div>
+    <p class="eyebrow">THE TEAM</p>
+    <h2>About <span class="gradient-text">Us</span></h2>
+    <p class="section-note">The EIC investment case was developed by a three-member team from Great Lakes Institute of Management — Gurgaon.</p>
+  </div>
+  <div class="team-intro card reveal" style="align-items: center; text-align: center; padding: 32px;">
+    <img src="assets/great_lakes_logo.png" alt="Great Lakes Institute of Management Gurgaon" style="max-height: 80px; margin-bottom: 16px;">
+    <div class="team-logo">Great Lakes Institute of Management — Gurgaon</div>
+    <span>Strategy case team · EeVee Infrastructure Corporation investment case</span>
+  </div>
+  <div class="team-grid">
+    <article class="profile-card reveal">
+      <div class="profile-img-wrap">
+        <img src="assets/team/Harsh Nimje.jpeg" alt="Harsh Nimje" loading="lazy">
+      </div>
+      <div class="profile-body">
+        <div class="profile-tag">PROFILE 01</div>
+        <h3>Harsh Nimje</h3>
+        <p class="profile-role">Marketing & Analytics</p>
+        <a href="mailto:harshvijaykumar.pgdm27g@greatlakes.edu.in">harshvijaykumar.pgdm27g@greatlakes.edu.in</a>
+      </div>
+    </article>
+    <article class="profile-card reveal reveal-delay-1">
+      <div class="profile-img-wrap">
+        <img src="assets/team/Krupa Raju.jpeg" alt="Krupa Raju" loading="lazy">
+      </div>
+      <div class="profile-body">
+        <div class="profile-tag">PROFILE 02</div>
+        <h3>Krupa Raju</h3>
+        <p class="profile-role">Finance · Minor in Operations</p>
+        <a href="mailto:krupa.pgdm27g@greatlakes.edu.in">krupa.pgdm27g@greatlakes.edu.in</a>
+      </div>
+    </article>
+    <article class="profile-card reveal reveal-delay-2">
+      <div class="profile-img-wrap">
+        <img src="assets/team/Rohit Dange.jpeg" alt="Rohit Dange" loading="lazy">
+      </div>
+      <div class="profile-body">
+        <div class="profile-tag">PROFILE 03</div>
+        <h3>Rohit Dange</h3>
+        <p class="profile-role">Finance · Minor in Analytics</p>
+        <a href="mailto:rohit.pgdm27g@greatlakes.edu.in">rohit.pgdm27g@greatlakes.edu.in</a>
+      </div>
+    </article>
+  </div>
+  <div class="team-footer card reveal">
+    <strong>EeVee Infrastructure Corporation · Strategy Workspace</strong>
+    <span>Great Lakes Institute of Management — Gurgaon</span>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div>
+    <strong>EIC Strategy Workspace</strong>
+    <span>EeVee Infrastructure Corporation · Great Lakes Institute of Management — Gurgaon</span>
+  </div>
+  <a href="#hero" class="back-to-top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
