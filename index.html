@@ -60,7 +60,7 @@
     <div class="hero-copy reveal">
       <p class="eyebrow">BOTTOMS UP 5.0 · ROUND 1 · EIC</p>
       <h1>From more chargers<br>to <span class="gradient-text">more certain</span> charging.</h1>
-      <p class="lead">A complete strategy workspace for EeVee Infrastructure Corporation — built around one question: is EIC mainly short of physical infrastructure, or does it need to align existing capacity with where, when and how public-charging demand actually occurs?</p>
+      <p class="lead"><strong>Executive Summary:</strong> The company faces a demand network alignment gap: despite rapid EV growth, its 2800 station network operates at only 46% utilization, with metropolitan congestion alongside underutilized semi urban and highway capacity. The analysis identifies a potential gap in demand led network planning and capacity allocation. Therefore, the company should prioritize Option C, Intelligent Charging Network Modernization, using Rs. 2,600 Cr to improve demand forecasting, utilization, reliability and customer experience, while creating the intelligence needed for targeted future expansion toward 2030.</p>
       <div class="hero-actions">
         <a class="btn primary" href="#problem">
           <span>Start with the problem</span>
@@ -103,16 +103,9 @@
     <div class="section-number">01</div>
     <p class="eyebrow">PROBLEM STATEMENT</p>
     <h2>What problem is EIC <span class="gradient-text">actually</span> trying to solve?</h2>
-    <p class="section-note">The visual below is the team's problem-statement / MECE framing, shown as a supplied working artifact.</p>
   </div>
-  <div class="artifact-frame reveal">
-    <img src="assets/problem_statement_hd.png" alt="EIC problem statement and MECE framework" class="artifact-img" loading="lazy">
-  </div>
-  <div class="case-fact-strip reveal">
-    <span class="fact-chip"><span class="chip-dot"></span>CASE FACT · 2,800 stations</span>
-    <span class="fact-chip"><span class="chip-dot"></span>CASE FACT · 46% utilization</span>
-    <span class="fact-chip"><span class="chip-dot"></span>CASE FACT · 32% annual EV growth</span>
-    <span class="fact-chip"><span class="chip-dot"></span>CASE FACT · One investment only</span>
+  <div class="card reveal" style="padding: 32px; font-size: 16px; line-height: 1.7;">
+    <p>The company faces a demand–network alignment paradox. EV registrations are growing at approximately 32% annually, but demand is uneven across locations and customer segments. While 68% of EV owners prefer home charging, commercial fleets rely heavily on public charging. therefore, EV ownership growth cannot be treated as a uniform proxy for public charging demand. Private operators are raising expectations around accessibility, reliability and charging speed. With one investment to be selected within the ₹5,000 Cr capital envelope toward 2030, the decision is how to deploy capital to solve the mismatch rather than simply increase network size.</p>
   </div>
 </section>
 
@@ -323,8 +316,8 @@
 
   <!-- Root cause banner -->
   <div class="root-cause-banner reveal">
-    <div class="rcb-label">ROOT CAUSE HYPOTHESIS</div>
-    <p>A potential gap in the <strong>granularity and responsiveness</strong> of EIC's network planning and capacity-allocation process, leaving fixed charging capacity insufficiently aligned with evolving area-level, customer-segment and peak-period demand. <em>The issue is not just building more infrastructure, but optimizing and operating existing capacity intelligently.</em></p>
+    <div class="rcb-label">ROOT CAUSE ANALYSIS</div>
+    <p>The 5 Whys points to a potential gap in the granularity and responsiveness of the company's network planning and capacity allocation process. Fixed capacity may not be sufficiently aligned with evolving area level, customer segment and peak period demand, producing metropolitan congestion alongside underutilized semi-urban and highway assets. Commercial fleet demand may also follow routes that do not match existing infrastructure. Because charging infrastructure is location-specific and difficult to relocate or resize after deployment, a mismatch can persist.</p>
   </div>
 </section>
 
@@ -400,42 +393,22 @@
     <p class="eyebrow">ANALYTICAL ASSUMPTIONS</p>
     <h2>What has to be <span class="gradient-text">true</span> for the recommendation to hold?</h2>
   </div>
-  <div class="assumption-grid">
-    <div class="card glass assumption reveal">
+  <div class="assumption-grid" style="grid-template-columns: 1fr 1fr; margin-bottom: 32px;">
+    <div class="card assumption reveal">
       <div class="assumption-id">A1</div>
-      <h3>Uneven EV growth</h3>
-      <p>EV growth is not uniform across urban, semi-urban and highway catchments. This is an inference, not a stated case fact.</p>
+      <p>EV growth is relatively more concentrated in urban markets rather than evenly distributed.</p>
     </div>
-    <div class="card glass assumption reveal reveal-delay-1">
+    <div class="card assumption reveal reveal-delay-1">
       <div class="assumption-id">A2</div>
-      <h3>Public-demand concentration</h3>
-      <p>Public-charging demand is disproportionately generated by fleets, travelers and users without convenient home charging.</p>
+      <p>Public-charging demand is disproportionately influenced by commercial fleets and users without convenient home charging.</p>
     </div>
-    <div class="card glass assumption reveal reveal-delay-2">
+    <div class="card assumption reveal">
       <div class="assumption-id">A3</div>
-      <h3>Service benchmark pressure</h3>
-      <p>Private operators are raising the service benchmark enough to make availability, speed and reliability strategically important.</p>
+      <p>Private operators are improving accessibility, reliability and charging speed, creating a higher service benchmark.</p>
     </div>
-    <div class="card glass assumption reveal">
+    <div class="card assumption reveal reveal-delay-1">
       <div class="assumption-id">A4</div>
-      <h3>Fixed physical assets</h3>
-      <p>Existing stations are location-specific and capital-intensive enough that relocation is less practical than better planning.</p>
-    </div>
-    <div class="card glass assumption reveal reveal-delay-1">
-      <div class="assumption-id">A5</div>
-      <h3>Digital feasibility</h3>
-      <p>EIC can build sufficient data, integration, employee adoption and change-management capability within three years.</p>
-    </div>
-    <div class="card glass assumption reveal reveal-delay-2">
-      <div class="assumption-id">A6</div>
-      <h3>Optimization headroom</h3>
-      <p>A meaningful part of underutilization can be improved through demand matching before broad physical expansion is required.</p>
-    </div>
-  </div>
-  <div class="callout warning reveal">
-    <div class="callout-icon">⚠️</div>
-    <div>
-      <strong>30% utilization caveat:</strong> The case states an expected 30% increase but does not define whether relative or percentage-point. Any ~60% interpretation must remain clearly labelled as an assumption, not a case fact.
+      <p>Existing charging capacity is difficult to reallocate after deployment, making demand-led planning strategically important.</p>
     </div>
   </div>
 </section>
@@ -562,22 +535,23 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td>Root-cause resolution</td><td>20%</td><td>2</td><td>2</td><td class="winner">5</td></tr>
-        <tr><td>Market demand alignment</td><td>15%</td><td>3</td><td>3</td><td class="winner">5</td></tr>
-        <tr><td>Customer impact</td><td>10%</td><td>4</td><td>4</td><td class="winner">5</td></tr>
+        <tr><td>Root-cause resolution</td><td>20%</td><td>2</td><td>2</td><td class="winner">4</td></tr>
+        <tr><td>Market demand alignment</td><td>15%</td><td>3</td><td>3</td><td class="winner">4</td></tr>
+        <tr><td>Customer impact</td><td>10%</td><td>4</td><td>4</td><td class="winner">4</td></tr>
         <tr><td>Financial viability</td><td>10%</td><td>2</td><td>3</td><td class="winner">5</td></tr>
-        <tr><td>ROI / value creation</td><td>10%</td><td>2</td><td>3</td><td class="winner">4</td></tr>
+        <tr><td>ROI / Value Creation</td><td>10%</td><td>2</td><td>3</td><td class="winner">4</td></tr>
         <tr><td>Operational efficiency</td><td>10%</td><td>3</td><td>3</td><td class="winner">5</td></tr>
-        <tr><td>Scalability to 2030</td><td>10%</td><td class="winner">5</td><td>4</td><td class="winner">5</td></tr>
+        <tr><td>Scalability to 2030</td><td>5%</td><td class="winner">5</td><td>4</td><td class="winner">5</td></tr>
         <tr><td>Technology readiness</td><td>5%</td><td class="winner">5</td><td>4</td><td>3</td></tr>
         <tr><td>Environmental sustainability</td><td>5%</td><td>3</td><td>4</td><td class="winner">5</td></tr>
-        <tr><td>Implementation risk</td><td>5%</td><td>3</td><td>3</td><td class="winner">4</td></tr>
+        <tr><td>Implementation risk</td><td>5%</td><td>3</td><td>3</td><td>3</td></tr>
+        <tr><td>Long-term strategic value</td><td>5%</td><td>4</td><td>4</td><td>4</td></tr>
         <tr class="total-row">
           <td>Weighted Score / 5</td>
           <td>100%</td>
           <td>3.00</td>
           <td>3.05</td>
-          <td class="winner-total">4.75</td>
+          <td class="winner-total">4.20</td>
         </tr>
       </tbody>
     </table>
@@ -611,7 +585,7 @@
       <div class="option-code">OPTION C</div>
       <h3>Understand, Optimize & Respond</h3>
       <p>Better demand intelligence, utilization, reliability and network responsiveness, with technology and execution as the main dependency.</p>
-      <div class="tradeoff-score highlight">Score: 4.75</div>
+      <div class="tradeoff-score highlight">Score: 4.20</div>
     </div>
   </div>
 </section>
@@ -626,10 +600,16 @@
     <p class="eyebrow">STRATEGIC RECOMMENDATION</p>
     <h2>Option C — <span class="gradient-text">Intelligent Charging Network</span> Modernization</h2>
   </div>
-  <div class="strategy-banner reveal">
-    <div class="strategy-tag">STRATEGIC PRINCIPLE</div>
-    <h3>Modernize first. Expand where the data proves expansion is required.</h3>
-    <p>The decision is driven by <strong>strategic fit</strong>, not simply cost. None of the three options is perfect. C is preferred because it directly addresses the diagnosed demand-capacity alignment problem while creating the information needed to make future physical expansion decisions better.</p>
+  <div class="strategy-banner reveal" style="text-align: left; padding: 32px; font-size: 15px; line-height: 1.6;">
+    <p style="margin-bottom: 12px;"><strong>Option C ranks first at 4.20/5</strong>, ahead of B at 3.05 and A at 3.00, primarily because it directly addresses the root cause.</p>
+    <p style="margin-bottom: 12px;"><strong>Recommendation is option C.</strong> At Rs. 2,600 Cr over three years, it combines demand forecasting, smart load balancing, predictive maintenance, reservations, remote monitoring, analytics, dynamic pricing and renewable-energy integration. It targets a 30% increase in station utilization while improving availability, reliability and network responsiveness.</p>
+    <p style="margin-bottom: 12px;">The three options involve clear trade-offs: Option A increases fast-charging capacity but requires Rs.4,800 Cr and may not solve the demand-location mismatch; Option B improves geographic accessibility but requires Rs. 3,900 Cr with uncertain demand in new locations; Option C offers the strongest root-cause fit at the lowest investment of Rs 2,600 Cr, but depends on technology, data quality and organizational adoption.</p>
+    <p style="margin-bottom: 12px;">The recommendation does not reject future physical expansion. Instead, it uses improved demand intelligence and network utilization to identify locations where additional capacity is genuinely required. This reduces the risk of premature investment while keeping the network scalable through 2030.</p>
+    <p style="margin-bottom: 12px;">Option C does not solve the complete problem on its own, especially the physical capacity and geographic coverage gaps. However, among the available options, it is the best fit for the current scenario because it directly addresses the underlying demand network alignment issue while preserving flexibility for targeted expansion later.</p>
+    <div style="background: rgba(200,16,46,0.05); padding: 16px; border-left: 4px solid #C8102E; margin-top: 24px;">
+      <p style="margin-bottom: 8px;"><strong>Risk with option C:</strong> Customers may face inconvenience during the transition due to system changes, inaccurate availability information or initial technical issues.</p>
+      <p><strong>Solution:</strong> Roll out in phases, conduct pilot testing, provide real time support and ensure customers can easily access reliable charger availability and booking information.</p>
+    </div>
   </div>
   <div class="capability-grid reveal">
     <div class="capability">
@@ -696,17 +676,10 @@
         <div class="phase-dot"></div>
         <div class="phase-line"></div>
       </div>
-      <div class="phase-time">0–6 months</div>
-      <div class="phase-content card glass">
-        <h3>Phase 1 — Network Intelligence Foundation</h3>
-        <ul>
-          <li>Establish station-level utilization baseline</li>
-          <li>Identify congestion and underutilization patterns</li>
-          <li>Consolidate demand and operational data</li>
-          <li>Assess and build demand-forecasting capability</li>
-          <li>Define station-level performance KPIs</li>
-        </ul>
-        <div class="gate"><strong>Gate:</strong> Is station-level data reliable enough to understand the demand-capacity mismatch?</div>
+      <div class="phase-time">0 to 6 months</div>
+      <div class="phase-content card">
+        <h3>Diagnose & build</h3>
+        <p>Station baseline; consolidate demand/operations data; map congestion and underutilization; define KPIs; assess data readiness.</p>
       </div>
     </div>
     <div class="phase reveal reveal-delay-1">
@@ -714,35 +687,31 @@
         <div class="phase-dot"></div>
         <div class="phase-line"></div>
       </div>
-      <div class="phase-time">6–18 months</div>
-      <div class="phase-content card glass">
-        <h3>Phase 2 — Network Optimization</h3>
-        <ul>
-          <li>Implement AI-enabled demand forecasting</li>
-          <li>Deploy smart load balancing</li>
-          <li>Introduce mobile reservations</li>
-          <li>Deploy predictive maintenance</li>
-          <li>Establish remote monitoring</li>
-          <li>Pilot dynamic pricing where appropriate</li>
-        </ul>
-        <div class="gate"><strong>Gate:</strong> Do pilots demonstrate measurable improvement in utilization, availability and reliability?</div>
+      <div class="phase-time">6 to 18 months</div>
+      <div class="phase-content card">
+        <h3>Pilot & optimize</h3>
+        <p>Deploy forecasting, monitoring, predictive maintenance and load balancing; introduce reservations; test dynamic pricing.</p>
+      </div>
+    </div>
+    <div class="phase reveal reveal-delay-2">
+      <div class="phase-marker">
+        <div class="phase-dot"></div>
+        <div class="phase-line"></div>
+      </div>
+      <div class="phase-time">18 to 30 months</div>
+      <div class="phase-content card">
+        <h3>Scale Network-wide</h3>
+        <p>Scale validated capabilities; standardize processes; integrate renewable energy where feasible.</p>
       </div>
     </div>
     <div class="phase reveal reveal-delay-2">
       <div class="phase-marker">
         <div class="phase-dot"></div>
       </div>
-      <div class="phase-time">18–36 months</div>
-      <div class="phase-content card glass">
-        <h3>Phase 3 — Scale & Prepare Future Expansion</h3>
-        <ul>
-          <li>Scale successful digital capabilities network-wide</li>
-          <li>Integrate renewable energy where feasible</li>
-          <li>Continuously reassess station-level demand</li>
-          <li>Identify structurally congested locations requiring physical capacity</li>
-          <li>Develop a data-backed investment pipeline for the next capital cycle</li>
-        </ul>
-        <div class="gate"><strong>Gate:</strong> Where does the data prove that physical expansion is genuinely required?</div>
+      <div class="phase-time">30 to 36 months</div>
+      <div class="phase-content card">
+        <h3>Evaluate & prepare</h3>
+        <p>Measure impact; identify persistent congestion/underutilization; build a demand-backed future investment pipeline.</p>
       </div>
     </div>
   </div>
@@ -775,71 +744,8 @@
     <p class="eyebrow">KPIs & BUSINESS IMPACT</p>
     <h2>How will EIC know the investment <span class="gradient-text">is working</span>?</h2>
   </div>
-  <div class="kpi-grid reveal">
-    <div class="kpi-card">
-      <strong class="kpi-value">46%</strong>
-      <span>Current utilization baseline</span>
-    </div>
-    <div class="kpi-card accent">
-      <strong class="kpi-value">+30%</strong>
-      <span>Option C utilization target</span>
-    </div>
-    <div class="kpi-card">
-      <strong class="kpi-value">↓</strong>
-      <span>Peak-hour congestion</span>
-    </div>
-    <div class="kpi-card">
-      <strong class="kpi-value">↑</strong>
-      <span>Station availability</span>
-    </div>
-    <div class="kpi-card">
-      <strong class="kpi-value">↑</strong>
-      <span>Charger uptime / reliability</span>
-    </div>
-    <div class="kpi-card">
-      <strong class="kpi-value">↑</strong>
-      <span>Reservation utilization</span>
-    </div>
-    <div class="kpi-card">
-      <strong class="kpi-value">↑</strong>
-      <span>Utilization per ₹ invested</span>
-    </div>
-    <div class="kpi-card">
-      <strong class="kpi-value">↑</strong>
-      <span>Investments backed by data</span>
-    </div>
-  </div>
-  <div class="impact-grid reveal">
-    <div class="card glass">
-      <h3>📊 Network utilization</h3>
-      <p>Improve the productivity of existing assets and narrow utilization imbalances.</p>
-    </div>
-    <div class="card glass">
-      <h3>😊 Customer experience</h3>
-      <p>Improve availability, reliability and convenience around the three stated satisfaction priorities.</p>
-    </div>
-    <div class="card glass">
-      <h3>🔧 Operational reliability</h3>
-      <p>Use monitoring and predictive maintenance to reduce avoidable downtime.</p>
-    </div>
-    <div class="card glass">
-      <h3>💰 Financial efficiency</h3>
-      <p>Extract more value from the existing 2,800-station network without inventing ROI figures.</p>
-    </div>
-    <div class="card glass">
-      <h3>🧠 Strategic capability</h3>
-      <p>Create a data-driven basis for future physical expansion decisions.</p>
-    </div>
-    <div class="card glass">
-      <h3>🌱 Sustainability</h3>
-      <p>Integrate renewable energy where feasible, consistent with the case's sustainability priority.</p>
-    </div>
-  </div>
-  <div class="callout warning reveal">
-    <div class="callout-icon">📋</div>
-    <div>
-      <strong>Financial discipline:</strong> The case does not provide enough data to calculate conventional ROI, NPV or payback. Use utilization, availability, uptime, congestion and utilization per ₹ invested as leading indicators.
-    </div>
+  <div class="card reveal" style="padding: 32px; font-size: 16px; line-height: 1.7;">
+    <p><strong>Business Impact:</strong> Option C can increase station utilization from the current 46% to approximately 60%, assuming the stated 30% target is a relative increase. With a Rs 2,600 Cr investment over 3 years, it can improve utilization of the existing 2,800 station network, reduce metropolitan congestion, improve charger availability and reliability, and create data-driven capacity planning for future expansion.</p>
   </div>
 </section>
 
