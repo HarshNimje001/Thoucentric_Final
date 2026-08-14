@@ -28,7 +28,6 @@
     <a href="#problem" data-section="problem">Problem</a>
     <a href="#whys" data-section="whys">5 Whys</a>
     <a href="#issue-tree" data-section="issue-tree">Issue Tree</a>
-    <a href="#ishikawa" data-section="ishikawa">Ishikawa</a>
     <a href="#customers" data-section="customers">Customers</a>
     <a href="#assumptions" data-section="assumptions">Assumptions</a>
     <a href="#requirements" data-section="requirements">Requirements</a>
@@ -215,111 +214,6 @@
   </div>
 </section>
 
-
-<!-- ═══════════════════════════════════════════ -->
-<!-- 04 · ISHIKAWA                               -->
-<!-- ═══════════════════════════════════════════ -->
-<section class="section" id="ishikawa">
-  <div class="section-head reveal">
-    <div class="section-number">04</div>
-    <p class="eyebrow">ROOT-CAUSE ANALYSIS</p>
-    <h2>Ishikawa / <span class="gradient-text">Fishbone</span> Diagram</h2>
-    <p class="section-note">Why is EIC's charging network underperforming? Analyzing root causes of low utilization, congestion and reliability gaps.</p>
-  </div>
-  <div class="artifact-actions reveal">
-    <a class="btn ghost small" href="attachments/Ishikawa%281%29.drawio" download>
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-      Download Draw.io source
-    </a>
-    <a class="btn ghost small" href="assets/fishbone_reference.png" target="_blank">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-      View full-size diagram
-    </a>
-  </div>
-
-  <!-- HTML-rendered Ishikawa fishbone -->
-  <div class="ishikawa-html reveal">
-    <div class="ishikawa-title">FISHBONE (ISHIKAWA) DIAGRAM — WHY IS EIC'S CHARGING NETWORK UNDERPERFORMING?</div>
-    <div class="ishikawa-subtitle">Analyzing root causes of low utilization, congestion, and reliability gaps</div>
-
-    <!-- Top row: 3 categories -->
-    <div class="ishi-top-row">
-      <div class="ishi-category">
-        <div class="ishi-cat-header demand"><span class="ishi-icon">📊</span> 1. DEMAND (MARKET)</div>
-        <ul class="ishi-items">
-          <li><span class="ishi-item-id">1.1</span> <span class="ishi-item-title">Uneven EV Adoption</span><span class="ishi-item-desc">EV growth concentrated in metros; low penetration in semi-urban and rural areas</span></li>
-          <li><span class="ishi-item-id">1.2</span> <span class="ishi-item-title">Home Charging Preference</span><span class="ishi-item-desc">68% of EV owners prefer home charging; reduces public charging relevance for majority</span></li>
-          <li><span class="ishi-item-id">1.3</span> <span class="ishi-item-title">Narrow Addressable Segment</span><span class="ishi-item-desc">Public charging mainly serves commuters, travelers and commercial fleets</span></li>
-          <li><span class="ishi-item-id">1.4</span> <span class="ishi-item-title">Peak-Hour Demand Spikes</span><span class="ishi-item-desc">Demand highly concentrated during peak hours at specific locations</span></li>
-        </ul>
-      </div>
-      <div class="ishi-category">
-        <div class="ishi-cat-header network"><span class="ishi-icon">📍</span> 2. NETWORK DESIGN (INFRA)</div>
-        <ul class="ishi-items">
-          <li><span class="ishi-item-id">2.1</span> <span class="ishi-item-title">Suboptimal Siting</span><span class="ishi-item-desc">Stations placed as per rollout plan, not driven by real-time demand signals</span></li>
-          <li><span class="ishi-item-id">2.2</span> <span class="ishi-item-title">Urban Congestion</span><span class="ishi-item-desc">High demand clusters at known metro locations leading to frequent congestion</span></li>
-          <li><span class="ishi-item-id">2.3</span> <span class="ishi-item-title">Underutilization Elsewhere</span><span class="ishi-item-desc">Highway and semi-urban stations operate significantly below capacity</span></li>
-          <li><span class="ishi-item-id">2.4</span> <span class="ishi-item-title">Charger Mix Mismatch</span><span class="ishi-item-desc">Only 35% fast-charging share; speed not aligned with rising customer expectations</span></li>
-        </ul>
-      </div>
-      <div class="ishi-category">
-        <div class="ishi-cat-header digital"><span class="ishi-icon">💻</span> 3. DIGITAL CAPABILITY</div>
-        <ul class="ishi-items">
-          <li><span class="ishi-item-id">3.1</span> <span class="ishi-item-title">No Demand Forecasting</span><span class="ishi-item-desc">Lack of AI-enabled forecasting; cannot anticipate where/when demand will occur</span></li>
-          <li><span class="ishi-item-id">3.2</span> <span class="ishi-item-title">No Load Balancing</span><span class="ishi-item-desc">No mechanism to redirect demand from congested to available stations</span></li>
-          <li><span class="ishi-item-id">3.3</span> <span class="ishi-item-title">No Dynamic Pricing</span><span class="ishi-item-desc">No pricing levers to shift demand away from peak hours/locations</span></li>
-          <li><span class="ishi-item-id">3.4</span> <span class="ishi-item-title">No Reservation Platform</span><span class="ishi-item-desc">Customers cannot see availability or reserve slots in advance</span></li>
-          <li><span class="ishi-item-id">3.5</span> <span class="ishi-item-title">Limited Predictive Maintenance</span><span class="ishi-item-desc">Reactive approach leads to downtime and reliability issues</span></li>
-          <li><span class="ishi-item-id">3.6</span> <span class="ishi-item-title">Limited Remote Monitoring</span><span class="ishi-item-desc">Insufficient real-time monitoring and issue detection across network</span></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Central spine -->
-    <div class="ishi-spine">
-      <div class="ishi-spine-line"></div>
-      <div class="ishi-spine-arrow"></div>
-      <div class="ishi-effect-box">
-        EIC's charging network is <strong>underperforming</strong>: uneven utilization, peak-hour congestion, and reliability gaps — limiting customer satisfaction and competitive position
-      </div>
-    </div>
-
-    <!-- Bottom row: 3 categories -->
-    <div class="ishi-bottom-row">
-      <div class="ishi-category">
-        <div class="ishi-cat-header operations"><span class="ishi-icon">⚙️</span> 4. OPERATIONS & MAINTENANCE</div>
-        <ul class="ishi-items">
-          <li><span class="ishi-item-id">4.1</span> <span class="ishi-item-title">Downtime & Reliability Issues</span><span class="ishi-item-desc">Equipment failures and outages reduce effective availability</span></li>
-          <li><span class="ishi-item-id">4.2</span> <span class="ishi-item-title">Inconsistent Service Quality</span><span class="ishi-item-desc">Variation in charging experience across locations</span></li>
-          <li><span class="ishi-item-id">4.3</span> <span class="ishi-item-title">Slow Issue Resolution</span><span class="ishi-item-desc">Manual intervention and longer ticket resolution cycles</span></li>
-        </ul>
-      </div>
-      <div class="ishi-category">
-        <div class="ishi-cat-header commercial"><span class="ishi-icon">💰</span> 5. COMMERCIAL & PRICING</div>
-        <ul class="ishi-items">
-          <li><span class="ishi-item-id">5.1</span> <span class="ishi-item-title">Limited Revenue Optimization</span><span class="ishi-item-desc">Flat pricing model does not optimize utilization or revenue</span></li>
-          <li><span class="ishi-item-id">5.2</span> <span class="ishi-item-title">Low Utilization Impact</span><span class="ishi-item-desc">Average utilization only 46%; suboptimal asset productivity</span></li>
-          <li><span class="ishi-item-id">5.3</span> <span class="ishi-item-title">High OPEX per Session</span><span class="ishi-item-desc">Idle capacity and inefficiencies increase cost per charging session</span></li>
-        </ul>
-      </div>
-      <div class="ishi-category">
-        <div class="ishi-cat-header customer"><span class="ishi-icon">👥</span> 6. CUSTOMER EXPERIENCE</div>
-        <ul class="ishi-items">
-          <li><span class="ishi-item-id">6.1</span> <span class="ishi-item-title">Availability Uncertainty</span><span class="ishi-item-desc">Customers unsure about charger availability at time of need</span></li>
-          <li><span class="ishi-item-id">6.2</span> <span class="ishi-item-title">Speed Concerns</span><span class="ishi-item-desc">Long wait times and limited fast-charging options</span></li>
-          <li><span class="ishi-item-id">6.3</span> <span class="ishi-item-title">Reliability Concerns</span><span class="ishi-item-desc">Outages and inconsistent performance erode trust</span></li>
-          <li><span class="ishi-item-id">6.4</span> <span class="ishi-item-title">Poor End-to-End Experience</span><span class="ishi-item-desc">Lack of digital convenience and real-time information</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Root cause banner -->
-  <div class="root-cause-banner reveal">
-    <div class="rcb-label">ROOT CAUSE ANALYSIS</div>
-    <p>The 5 Whys points to a potential gap in the granularity and responsiveness of the company's network planning and capacity allocation process. Fixed capacity may not be sufficiently aligned with evolving area level, customer segment and peak period demand, producing metropolitan congestion alongside underutilized semi-urban and highway assets. Commercial fleet demand may also follow routes that do not match existing infrastructure. Because charging infrastructure is location-specific and difficult to relocate or resize after deployment, a mismatch can persist.</p>
-  </div>
-</section>
 
 
 <!-- ═══════════════════════════════════════════ -->
